@@ -21,7 +21,7 @@ public class LimitedPlatformerMovement : MonoBehaviour
 {
     [SerializeField] private float maxSpeed = 10f;
     [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private Animator _animator;
+    [SerializeField] private Animator _Player;
     
     private Vector2 moveInput;
     private bool jumpInput;
@@ -68,11 +68,11 @@ public class LimitedPlatformerMovement : MonoBehaviour
 
         if (moveInput.x != 0)
         {
-            _animator.SetBool("IsRunning", true);
+            _Player.SetBool("IsRunning", true);
         }
         else
         {
-            _animator.SetBool("IsRunning", false);
+            _Player.SetBool("IsRunning", false);
         }
         // Change direction
         if (moveInput.x > 0)
