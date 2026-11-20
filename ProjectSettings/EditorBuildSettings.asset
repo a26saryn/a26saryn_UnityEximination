@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Bakgrund historia.unity
+    guid: 7efb1f1fa463f6742be807c01b4eae3f
+  - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: 2c7a4ff118ed8a846ac64d4c948582a9
   - enabled: 1
